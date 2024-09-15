@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="locationInput" placeholder="Enter Location">
+        <button id="getWeatherBtn" onclick="getWheather()">Get Weather</button>
+
+        <div id="weatherCard" class="weather-card">
+            <div>
+                <h2 id="locationName">Location</h2>
+            </div>
+
+            <div class="weatherForecast">
+                <div class="weatherInfo">
+                    <p id="temperature">Temperature: 34°F</p>
+                    <p id="humidity">Humidity: 60%</p>
+                    <p id="windSpeed">Wind Speed: 6.2km/hr</p>
+                    <p id="weatherDescription">Description: Today we have Hot Day</p>
+                </div>
+                    
+                <div class="weatherIcon">
+                    <img id="weatherIcon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon" width="100">
+                </div>
+             </div>
+
+            
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
